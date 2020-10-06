@@ -19,5 +19,4 @@ deploy:
   on:
     branch: master
   access_key_id: AKIAUUB6KGXCEQSWRNH2
-  secret_access_key:
-    secure: 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
+  secret_access_key: MOUmDxOLrOL/ny/U6XT+hvM+ivCp0fFacGQTzHds
