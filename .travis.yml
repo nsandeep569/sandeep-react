@@ -7,3 +7,18 @@ before_install:
 
 script:
   - docker run -e CI=true sandeep/sandeep-react  npm run test --coverage
+
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-south-1"
+  app: "sandeep-react"
+  env: "SandeepReact-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-317958272452"
+  bucket_path: "sandeep-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
+
