@@ -18,5 +18,8 @@ deploy:
   bucket_path: "sandeep-react"
   on:
     branch: master
-  access_key_id: AKIAUUB6KGXCEQSWRNH2
-  secret_access_key: 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
+  access_key_id: 
+    secure: "$AWS_ACCESS_ID"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
+
